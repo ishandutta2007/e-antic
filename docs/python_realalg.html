@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Interface with realalg &#8212; pyeantic 2.0.2 documentation</title>
+    <title>Interface with realalg &#8212; pyeantic 2.1.0 documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=0b5d17ac"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=5b0f203b"></script>
     <script src="_static/doctools.js?v=888ff710"></script>
     <script src="_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
@@ -137,8 +137,8 @@
       
     
     
-    <img src="https://github.com/flatsurf/e-antic/raw/master/logo.svg?sanitize=true" class="logo__image only-light" alt="pyeantic 2.0.2 documentation - Home"/>
-    <script>document.write(`<img src="https://github.com/flatsurf/e-antic/raw/master/logo.svg?sanitize=true" class="logo__image only-dark" alt="pyeantic 2.0.2 documentation - Home"/>`);</script>
+    <img src="https://github.com/flatsurf/e-antic/raw/master/logo.svg?sanitize=true" class="logo__image only-light" alt="pyeantic 2.1.0 documentation - Home"/>
+    <script>document.write(`<img src="https://github.com/flatsurf/e-antic/raw/master/logo.svg?sanitize=true" class="logo__image only-dark" alt="pyeantic 2.1.0 documentation - Home"/>`);</script>
   
   
 </a></div>
@@ -433,7 +433,7 @@ This module provides conversion from and to <code class="docutils literal notran
 <span class="sig-prename descclassname"><span class="pre">pyeantic.realalg_conversion.</span></span><span class="sig-name descname"><span class="pre">realalg_nf_to_eantic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">K</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'a'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyeantic.realalg_conversion.realalg_nf_to_eantic" title="Permalink to this definition">#</a></dt>
 <dd><p>Convert a realalg real number field to eantic</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">realalg</span>  <span class="c1"># random output as it prints a deprecation warning, see https://github.com/MarkCBell/realalg/pull/6</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pyeantic.realalg_conversion</span> <span class="kn">import</span> <span class="n">realalg_nf_to_eantic</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pyeantic.realalg_conversion</span> <span class="kn">import</span> <span class="n">realalg_nf_to_eantic</span>  <span class="c1"># random output due to deprecation warnings from cppyy</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">R</span> <span class="o">=</span> <span class="n">realalg</span><span class="o">.</span><span class="n">RealNumberField</span><span class="p">([</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># random output as it prints a deprecation warning in SageMath</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">realalg_nf_to_eantic</span><span class="p">(</span><span class="n">R</span><span class="p">)</span>
 <span class="go">NumberField(a^2 - 2, [1.4142135...])</span>
